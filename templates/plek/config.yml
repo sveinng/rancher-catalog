@@ -1,0 +1,7 @@
+name: Plek # Name of the Catalog Entry
+description: Plek rancher Docker deployment |
+version: 0 # Version of the Catalog to be used
+category: Plek # Category to be used for searching catalog entries
+maintainer: ILUMY # The maintainer of the catalog entry
+license: # The license
+projectURL: http://plek.co# A URL related to the catalog entry

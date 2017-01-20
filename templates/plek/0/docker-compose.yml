@@ -1,0 +1,15 @@
+version: '2'
+services:
+  plek:
+    build: .
+    ports:
+    - '1337:1337'
+    volumes:
+        - ./:/plek
+        - /plek/node_modules
+        - /plek/api
+        - /plek/admin
+        - /plek/.tmp
+    environment:
+      - NODE_ENV=production-docker
+    command: npm start

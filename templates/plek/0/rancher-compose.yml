@@ -1,0 +1,15 @@
+version: '2'
+catalog:
+  name: Plek # Name of the versioned template of the Catalog Entry
+  version: 1.0 # Version of the versioned template of the Catalog Entry
+  description: Plek 1.0 # Description of the versioned template of the Catalog Entry
+  minimum_rancher_version: v1.0.1 # The minimum version of Rancher that supports the template, v1.0.1 and 1.0.1 are acceptable inputs
+  maximum_rancher_version: # The maximum version of Rancher that supports the template, v1.0.1 and 1.0.1 are acceptable inputs
+  upgrade_from: # The previous versions that this template can be upgraded from
+  questions: #Used to request user input for configuration options
+    - variable: token # A single word that is used to pair the question and answer.
+      label: Token # The "question" to be answered.
+      description: Token to access git | # The description of the question to show the user how to answer the question.
+      default: # (Optional) A default value that will be pre-populated into the UI
+      required: true # (Optional) Whether or not an answer is required. By default, it's considered `false`.
+      type: # How the questions are formatted and types of response expected
