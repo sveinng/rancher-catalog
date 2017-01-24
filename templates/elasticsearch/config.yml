@@ -1,0 +1,5 @@
+name: "ElasticSearch"
+description: "Elastic search cluster"
+version: v1.0.0
+category: "Plek"
+maintainer: "ILUMY"
