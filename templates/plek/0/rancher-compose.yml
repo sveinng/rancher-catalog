@@ -5,8 +5,8 @@ version: '2'
   description: "Plek 1.0"
   minimum_rancher_version: v1.0.1 
   questions:
-    - variable: "token"
-      label: "Token"
-      description: "Token to access git"
+    - variable: "certificate"
+      label: "Git deploy certificate"
+      description: "Certificate for git access"
       required: true
-      type: "string"
+      type: "multiline"
