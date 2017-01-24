@@ -12,4 +12,5 @@ services:
         - /plek/.tmp
     environment:
       - NODE_ENV=production-docker
+      - certificate=${certificate}
     command: npm start
