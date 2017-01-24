@@ -3,6 +3,7 @@ FROM mhart/alpine-node:6
 
 ### build tools for native dependencies
 #RUN apk add --update ca-certificates make gcc g++ python git libreoffice ffmpeg librsvg cairo openssh
+RUN apk add --update git openssh
 #RUN npm install grunt bower -g
 ### graphicsmagick
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories;
