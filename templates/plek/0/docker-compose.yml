@@ -1,7 +1,7 @@
 version: '2'
 services:
   plek:
-    build: ilumy/plek:latest
+    image: ilumy/plek:latest
     ports:
     - '1337:1337'
     volumes:
