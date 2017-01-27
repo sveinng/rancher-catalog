@@ -5,8 +5,15 @@ version: '2'
   description: "Plek 1.0"
   minimum_rancher_version: v1.0.1 
   questions:
-    - variable: "certificate"
-      label: "Git deploy certificate"
-      description: "Certificate for git access"
+    - variable: "elasticsearch_source"
+      description: "Link to elasticsearch service or stack/service"
+      label: "Elasticsearch source"
+      type: "service"
       required: true
-      type: "multiline"
+      default: "es/elasticsearch-clients"
+    - variable: "mongo_source"
+      description: "Link to mongodb service or stack/service"
+      label: "mongodb source"
+      type: "service"
+      required: true
+      default: "mongo/mongodb"
