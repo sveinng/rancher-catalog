@@ -1,7 +1,7 @@
 version: '2'
 services:
   plek:
-    image: ilumy/plek:master
+    image: ilumy/plek:master2
     ports:
     - '1337:1337'
     environment:
