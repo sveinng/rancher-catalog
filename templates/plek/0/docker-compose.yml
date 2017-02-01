@@ -9,7 +9,6 @@ services:
       - RANCHER_CLUSTER=on
       - MONGO_SERVICE_NAME=mongo-cluster
       - RANCHER_SERVER=accept.plek.co:8080
-      - NODE_ENV=production-docker
     command: npm start
     links:
       - redis
