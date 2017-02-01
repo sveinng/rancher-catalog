@@ -1,20 +1,21 @@
 version: '2'
 services:
   plek:
-    image: ilumy/plek:v7
+    image: ilumy/plek:latest
     ports:
     - '1337:1337'
     environment:
       - NODE_ENV=production-docker
       - RANCHER_CLUSTER=on
-      - MONGO_SERVICE_NAME=mongo
+      - MONGO_SERVICE_NAME=mongo-cluster
       - RANCHER_SERVER=accept.plek.co:8080
+      - NODE_ENV=production-docker
     command: npm start
     links:
       - redis
     external_links:
       - ${elasticsearch_source}:elasticsearch
-      - ${mongodb_source}:mongo
+      - ${mongodb_source}:mongo_cluster
   redis:
     image: redis
     ports:
