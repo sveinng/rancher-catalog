@@ -4,8 +4,6 @@ services:
     image: ilumy/plek:master2
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
-    ports:
-      - '1337:1337'
     environment:
       - NODE_ENV=production-docker
       - RANCHER_CLUSTER=on
