@@ -2,8 +2,10 @@ version: '2'
 services:
   plek:
     image: ilumy/plek:master2
+    labels:
+      io.rancher.scheduler.affinity:host_label: ${host_label}
     ports:
-    - '1337:1337'
+      - '1337:1337'
     environment:
       - NODE_ENV=production-docker
       - RANCHER_CLUSTER=on
@@ -14,8 +16,6 @@ services:
       - redis
     external_links:
       - ${elasticsearch_source}:elasticsearch
-      - ${mongo_source}:mongo-cluster
-    labels:
-      io.rancher.scheduler.affinity:host_label: environment=app
+      - ${mongo_source}:mongo-cluster  
   redis:
     image: redis
