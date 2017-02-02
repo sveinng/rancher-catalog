@@ -14,7 +14,7 @@ services:
       - redis
     external_links:
       - ${elasticsearch_source}:elasticsearch
-      - ${mongodb_source}:mongo-cluster
+      - ${mongo_source}:mongo-cluster
     labels:
       io.rancher.scheduler.affinity:host_label: environment=app
   redis:
