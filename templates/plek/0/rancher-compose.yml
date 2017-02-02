@@ -5,6 +5,13 @@ version: '2'
   description: "Plek 1.0"
   minimum_rancher_version: v1.0.1 
   questions:
+    - variable: host_label
+      label: "Host Label to Plek App"
+      description: |
+        Host label to use as Plek 'value' tag.
+        Example: 'environment=app'
+      required: false
+      type: "string"
     - variable: "elasticsearch_source"
       description: "Link to elasticsearch service or stack/service"
       label: "Elasticsearch source"
