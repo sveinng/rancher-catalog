@@ -41,6 +41,13 @@
       required: true
       default: 22
       type: "string"
+    - variable: "registry_port"
+      description: "Registry port to expose on host. Will be used to bind TCP"
+      label: "Registry port:"
+      required: true
+      default: 4567
+      type: "string"
+
 
 gitlab-server:
   scale: 1
