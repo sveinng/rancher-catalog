@@ -1,0 +1,5 @@
+name: "Backup"
+description: "Backup rancher Docker deployment"
+version: v1.0.0
+category: "Backup"
+maintainer: "ILUMY"

@@ -1,0 +1,6 @@
+version: '2'
+.catalog:
+  name: "Backup"
+  version: "v1.0.0"
+  description: "Backup 1.0"
+  minimum_rancher_version: v1.0.1 
