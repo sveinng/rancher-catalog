@@ -1,0 +1,8 @@
+version: '2'
+services:
+  redis:
+    image: redis:3.2.7-alpine
+    labels:
+      io.rancher.scheduler.affinity:host_label: ${host_label}
+    ports:
+        - 6379:6379

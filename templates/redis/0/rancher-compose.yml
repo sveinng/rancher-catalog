@@ -1,0 +1,14 @@
+version: '2'
+.catalog:
+  name: "Redis"
+  version: "v1.0.0"
+  description: "Redis 3.2.7"
+  minimum_rancher_version: v1.0.1 
+  questions:
+    - variable: host_label
+        label: "Host Label to Redis"
+        description: |
+          Host label to use as Redis 'value' tag.
+          Example: 'environment=redis'
+        required: false
+        type: "string"

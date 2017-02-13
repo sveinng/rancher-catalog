@@ -10,10 +10,7 @@ services:
       - MONGO_SERVICE_NAME=mongo-cluster
       - RANCHER_SERVER=accept.plek.co:8080
     command: npm start
-    links:
-      - redis
     external_links:
       - ${elasticsearch_source}:elasticsearch
-      - ${mongo_source}:mongo-cluster  
-  redis:
-    image: redis
+      - ${mongo_source}:mongo-cluster
+      - ${redis_source}:redis-cluster

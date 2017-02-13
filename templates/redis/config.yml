@@ -1,0 +1,5 @@
+name: "Redis"
+description: "Redis key alue storage"
+version: v1.0.0
+category: "Plek"
+maintainer: "ILUMY"

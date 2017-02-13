@@ -24,3 +24,9 @@ version: '2'
       type: "service"
       required: true
       default: "mongo/mongodb"
+    - variable: "redis_source"
+      description: "Link to redis service or stack/service"
+      label: "redis source"
+      type: "service"
+      required: true
+      default: "redis/redis-server"
