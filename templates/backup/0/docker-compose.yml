@@ -2,7 +2,7 @@ version: '2'
 services:
   backup:
     image: webcenter/rancher-backup
-
+    privileged: true
     labels:
 	io.rancher.container.create_agent=true
 	io.rancher.container.agent.role=environment
