@@ -6,7 +6,7 @@ services:
     labels:
       - io.rancher.container.create_agent=true
       - io.rancher.container.agent.role=environment
-      - io.rancher.scheduler.affinity:host_label: environment=test
+      - io.rancher.scheduler.affinity:host_label=environment=test
     environment:
       - CRON_SCHEDULE=0 * * * * *
       - BACKEND=sftp://rancherbackup@backup.ilumy.com:99/data/racherBackup/
