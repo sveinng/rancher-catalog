@@ -1,0 +1,21 @@
+version: '2'
+.catalog:
+  name: "Node"
+  version: "v1.0.1"
+  description: "Node 1.0"
+  minimum_rancher_version: v1.0.1 
+  questions:
+    - variable: host_label
+      label: "Host Label to Node App"
+      description: |
+        Host label to use as Node 'value' tag.
+        Example: 'environment=app'
+      required: false
+      type: "string"
+    - variable: git_url
+        label: "Git url"
+        description: |
+          Host label to use as Node 'value' tag.
+          Example: 'https://username:password@gitlab.ilumy.com/ilumy/node.git'
+        required: true
+        type: "string"

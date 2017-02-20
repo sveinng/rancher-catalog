@@ -1,0 +1,26 @@
+version: '2'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    labels:
+      io.rancher.scheduler.affinity:host_label: ${host_label}
+    container_name: Bigmove
+    environment:
+    - NODE_ENV=docker-prod
+    - git_url=${git_url}
+    - DEBUG=main
+    links:
+    - mongo
+    volumes:
+    - /app
+    restart: always
+    command: bash /installNode.sh
+  mongo:
+    image: mongo
+    ports:
+    - '27038:27017'
+    volumes:
+    - /data/db
+    restart: always

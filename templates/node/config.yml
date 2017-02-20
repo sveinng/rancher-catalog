@@ -1,0 +1,5 @@
+name: "Node"
+description: "Generic node app deployment"
+version: v1.0.0
+category: "Node"
+maintainer: "ILUMY"
